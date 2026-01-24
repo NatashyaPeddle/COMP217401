@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "B:\\CENTENNIAL_COLLEGE\\2026\\REPOSITORIES\\COMP217401-C-\\COMP217401_Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|B:\\CENTENNIAL_COLLEGE\\2026\\REPOSITORIES\\COMP217401-C-\\COMP217401_Lab1\\COMP217401_Lab1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:COMP217401_Lab1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "B:\\CENTENNIAL_COLLEGE\\2026\\REPOSITORIES\\COMP217401-C-\\COMP217401_Lab1\\COMP217401_Lab1\\main.cpp",
+              "RelativeDocumentMoniker": "COMP217401_Lab1\\main.cpp",
+              "ToolTip": "B:\\CENTENNIAL_COLLEGE\\2026\\REPOSITORIES\\COMP217401-C-\\COMP217401_Lab1\\COMP217401_Lab1\\main.cpp",
+              "RelativeToolTip": "COMP217401_Lab1\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T14:44:42.414Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
