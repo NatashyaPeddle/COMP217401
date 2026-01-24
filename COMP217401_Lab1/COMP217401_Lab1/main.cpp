@@ -10,7 +10,7 @@ private:
 
 public: 
 	//constructor
-	GameObject(int id, string& name) : id(id), name(name) {
+	GameObject(int id, const string& name) : id(id), name(name) {
 		cout << "GameObject Constructor Invoked" << endl; //gameobject constructor
 	}
 
@@ -52,7 +52,7 @@ private:
 	int score;
 
 public:
-	Player(int id, string& name, int health, int score) : GameObject(id, name), health(health), score(score) {
+	Player(int id, const string& name, int health, int score) : GameObject(id, name), health(health), score(score) {
 		cout << "Player Constructor Invoked" << endl; //player constructor
 	}
 
@@ -96,7 +96,7 @@ private:
 	int damage;
 
 public:
-	Enemy(int id, string& name, int damage) : GameObject(id, name), damage(damage) {
+	Enemy(int id,  const string& name, int damage) : GameObject(id, name), damage(damage) {
 		cout << "Enemy Constructor Invoked" << endl; //Enemy constructor
 	}
 
@@ -133,6 +133,13 @@ void healByReference(Player& p, int amount) {
 //MAIN -----------------------------------------------------------------------
 
 int main() {
+	Player player(10, "Adventurer", 100, 200);
+	Enemy enemy(5, "Dragon", 20);
+
+	GameObject* objectPlayer = &player;
+	GameObject* objectEnemy = &enemy;
+	objectPlayer->printInfo();
+	objectEnemy->printInfo();
 
 	return 0;
 }
