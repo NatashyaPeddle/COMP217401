@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+#define MAX_HEALTH 100;
+#define HEALTH_BOOST 25;
+#define SCORE_BOOST 50;
+
 
 //GAME OBJECT -----------------------------------------------------------------------
 class GameObject {
@@ -74,19 +78,18 @@ public:
 	}
 
 	//OVERRIDE INFO
-	virtual void printInfo() override {
-		cout << "Player: ID: " << getId() << ", Name: " << getName() << ", Health: " << health << ", score: " << score << endl; 
+	void printInfo() override {
+		cout << "Player ID: " << getId() << ", Name: " << getName() << ", Health: " << health << ", score: " << score << endl; 
 	}
-	// double check this ^^^^^ -------- I'm unsure if its correct
 
 	//FUNCTIONS
 
 	void takeDamage(int damage) {
-		setHealth(health - damage); ///Not sure if this is correct
+		health -= damage;
 	}
 
 	void addScore(int s) {
-
+		score += s;
 	}
 };
 
@@ -111,10 +114,9 @@ public:
 	}
 
 	//OVERRIDE INFO
-	virtual void printInfo() override {
-		cout << "Enemy: ID: " << getId() << ", Name: " << getName() << ", Damage: " << damage << endl;
+	void printInfo() override {
+		cout << "Enemy ID: " << getId() << ", Name: " << getName() << ", Damage: " << damage << endl;
 	}
-	// double check this ^^^^^ -------- I'm unsure if its correct
 
 };
 
@@ -122,13 +124,48 @@ public:
 
 //FREE FUNCTIONS -----------------------------------------------------------------------
 void healByValue(Player p, int amount) {
-
-}
+	p.setHealth(p.getHealth() + amount);
+};
 
 void healByReference(Player& p, int amount) {
+	p.setHealth(p.getHealth() + amount);
+};
 
-}
 //POWERUP -----------------------------------------------------------------------
+class PowerUp {
+	protected:
+	std::string powerName;
+
+	public:
+	//virtual destructor
+	virtual ~PowerUp() {
+		cout << "PowerUp Destructor Invoked" << endl; //PowerUp Destructor
+	}
+
+	virtual void apply(Player& p) = 0;
+};
+
+class HealthBoost : PowerUp {
+	public:
+	void apply(Player& p) override {
+		int health = HEALTH_BOOST;
+		int maxHealth = MAX_HEALTH;
+		healByReference(p, health);
+
+		if (p.getHealth() > maxHealth) {
+			p.setHealth(maxHealth);
+		}
+	}
+};
+
+class ScoreBoost : PowerUp {
+	public:
+	void apply(Player& p) override {
+		int score = SCORE_BOOST;
+		p.addScore(score);
+	}
+};
+
 
 //MAIN -----------------------------------------------------------------------
 
