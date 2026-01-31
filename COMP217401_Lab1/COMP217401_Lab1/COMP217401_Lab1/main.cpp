@@ -4,7 +4,29 @@
 using namespace std;
 //main.cpp
 
+class Item {
+	public:
+	Virtual function void use() = 0;
+	string name;
+};
 
+class HealthPotion : Item {
+	public:
+	void use() override {
+		cout << "Using Health Potion: Restores 50 health." << endl;
+	}
+};
+
+class ManaPotion : Item {
+	public:
+	void use() override {
+		cout << "Using Mana Potion: Restores 25 mana." << endl;
+	}
+};
+
+class Inventory {
+	static array Item*{};
+};
 
 //MAIN ----------------------------------------------------------------------------
 int main() {
@@ -26,5 +48,7 @@ int main() {
 	deleteCharacter(mage);
 	
 	
+	
 	return 0;
 }
+
