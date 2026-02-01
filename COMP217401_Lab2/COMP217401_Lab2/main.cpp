@@ -163,6 +163,7 @@ int main() {
 	inventory.removeQuestItem();
 
 	//Task 3
+	cout << "\n\n TASK 3" << endl;
 
 	//Stack Variable
 	EntityContainer<GameEntity> container;
@@ -196,13 +197,13 @@ int main() {
 	cout << "\nEnemy 2 After:" << endl;
 	enemy2->printInfo();
 
-	cout << "\nFinding Entity, ID 2:\n";
-	GameEntity* found = container.findEntityById(2);
+	cout << "\nFinding Entity, ID 4:\n";
+	GameEntity* found = container.findEntityById(4);
 
 	if (found != nullptr) {
 		found->printInfo();
 
-		Enemy* cast = dynamic_cast<Enemy*>(found);
+		NPC* cast = dynamic_cast<NPC*>(found);
 		if (cast != nullptr) {
 			cout << "\nDynamic Cast Succeded\n" << endl;
 		}
