@@ -2,6 +2,11 @@
 #include <vector>
 #include "GameUtils.h"
 #include "CharacterStats.h"
+#include <string>
+#include "GameEntity.h"
+#include "EntityContainer.h"
+#include "Enemy.h"
+#include "NPC.h"
 using namespace std;
 //main.cpp
 
@@ -55,7 +60,8 @@ class Inventory {
 	
 	void removeQuickItem(int slot) {
 		cout << "Removed " << quickSlots[slot]->name << " from quick bar slot " << slot << endl;
-		quickSlots[slot]->~Item();
+		delete quickSlots[slot];
+		quickSlots[slot] = nullptr;
 	}
 
 	//Inventory add/remove
@@ -66,7 +72,8 @@ class Inventory {
 
 	void removeInventoryItem(int slot) {
 		cout << "Removed " << mainInventory[slot]->name << " from inventory slot " << slot << endl;
-		mainInventory[slot]->~Item();
+		delete mainInventory[slot];
+		mainInventory[slot] = nullptr;
 	}
 
 	//Quest Item add/remove
@@ -77,6 +84,7 @@ class Inventory {
 
 	void removeQuestItem() {
 		cout << "Removed " << questItems.back()->name << " from quest inventory" << endl;
+		delete questItems.back();
 		questItems.pop_back();
 	}
 
@@ -146,6 +154,58 @@ int main() {
 	inventory.removeQuestItem();
 	inventory.removeQuestItem();
 
-	return 0;
+	//Task 3
+
+	//Stack Variable
+	EntityContainer<GameEntity> container;
+
+
+	//Entities are pointers on stack
+	//Objects created on heap
+	GameEntity* enemy1 = new Enemy(1, 150);
+	GameEntity* enemy2 = new Enemy(2, 200);
+	GameEntity* npc1 = new NPC(3, "Hello Adventurer!");
+	GameEntity* npc2 = new NPC(4, "Hey, you. You're finally awake");
+
+	container.addEntity(enemy1);
+	container.addEntity(enemy2);
+	container.addEntity(npc1);
+	container.addEntity(npc2);
+
+	cout << "\nAll Entities:\n";
+	container.printAllEntities();
+
+	cout << "\nSwapping Enemy Entities 1 and 2:\n";
+	cout << "\nEnemy 1 Before: \n";
+	enemy1->printInfo();
+	cout << "\nEnemy 2 Before: \n";
+	enemy2->printInfo();
+
+	swapEntities(enemy1, enemy2);
+
+	cout << "\nEnemy 1 After: \n";
+	enemy1->printInfo();
+	cout << "\nEnemy 2 After: \n";
+	enemy2->printInfo();
+
+	cout << "n\Finding Entity, ID 2:\n";
+	GameEntity* found = container.findEntityById(2);
+	
+	if (found != nullptr) {
+		found->printInfo();
+
+		Enemy* cast = dynamic_cast<Enemy*>(found);
+		if (cast != nullptr) {
+			cout << "\nDynamic Cast Succeded"\n;
+		}
+
+		else {
+			cout << "\nDynamic Cast Failed"\n;
+		}
+	}
+	
+	else {
+		cout << "Failed to find Entity" << endl;
+	}
 }
 
