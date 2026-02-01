@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Elijah\\Documents\\Projects\\CENTENNIAL\\W2026\\COMP217\\Projects\\COMP217401\\COMP217401_Lab1\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\super\\OneDrive\\Documents\\GitHub\\COMP217401\\COMP217401_Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10E5F1F8-3364-4AAA-B36B-9E5B7422AE48}|COMP217401_Lab1\\COMP217401_Lab1.vcxproj|C:\\Users\\super\\OneDrive\\Documents\\GitHub\\COMP217401\\COMP217401_Lab1\\COMP217401_Lab1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{10E5F1F8-3364-4AAA-B36B-9E5B7422AE48}|COMP217401_Lab1\\COMP217401_Lab1.vcxproj|solutionrelative:COMP217401_Lab1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\super\\OneDrive\\Documents\\GitHub\\COMP217401\\COMP217401_Lab1\\COMP217401_Lab1\\main.cpp",
+              "RelativeDocumentMoniker": "COMP217401_Lab1\\main.cpp",
+              "ToolTip": "C:\\Users\\super\\OneDrive\\Documents\\GitHub\\COMP217401\\COMP217401_Lab1\\COMP217401_Lab1\\main.cpp",
+              "RelativeToolTip": "COMP217401_Lab1\\main.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAJwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-24T14:44:42.414Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

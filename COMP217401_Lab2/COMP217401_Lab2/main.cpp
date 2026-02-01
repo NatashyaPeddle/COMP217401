@@ -11,14 +11,14 @@ using namespace std;
 //main.cpp
 
 class Item {
-	public:
+public:
 	string name = "test";
 	virtual void use() = 0;
 	virtual ~Item() {};
 };
 
 class HealthPotion : public Item {
-	public:
+public:
 	HealthPotion() {
 		name = "Health Potion";
 	}
@@ -28,7 +28,7 @@ class HealthPotion : public Item {
 };
 
 class ManaPotion : public Item {
-	public:
+public:
 	ManaPotion() {
 		name = "Mana Potion";
 	}
@@ -39,15 +39,23 @@ class ManaPotion : public Item {
 
 class Inventory {
 	//arrays
-	public:
+public:
 	Item* quickSlots[5];
 	Item** mainInventory;
 	vector<Item*> questItems;
 
 	//constructor
-	public:
+public:
 	Inventory(int size) {
-		mainInventory = new Item*[size];
+		mainInventory = new Item * [size];
+
+		for (int i = 0; i < 5; i++) {
+			quickSlots[i] = nullptr;
+		}
+
+		for (int i = 0; i < size; i++) {
+			mainInventory[i] = nullptr;
+		}
 	}
 
 
@@ -57,7 +65,7 @@ class Inventory {
 		cout << "Added " << i->name << " to quick bar slot " << slot << endl;
 		quickSlots[slot] = i;
 	}
-	
+
 	void removeQuickItem(int slot) {
 		cout << "Removed " << quickSlots[slot]->name << " from quick bar slot " << slot << endl;
 		delete quickSlots[slot];
@@ -165,47 +173,46 @@ int main() {
 	GameEntity* enemy1 = new Enemy(1, 150);
 	GameEntity* enemy2 = new Enemy(2, 200);
 	GameEntity* npc1 = new NPC(3, "Hello Adventurer!");
-	GameEntity* npc2 = new NPC(4, "Hey, you. You're finally awake");
+	GameEntity* npc2 = new NPC(4, "Hey, you. You're finally awake.");
 
 	container.addEntity(enemy1);
 	container.addEntity(enemy2);
 	container.addEntity(npc1);
 	container.addEntity(npc2);
 
-	cout << "\nAll Entities:\n";
+	cout << "\nAll Entities:" << endl;
 	container.printAllEntities();
 
 	cout << "\nSwapping Enemy Entities 1 and 2:\n";
-	cout << "\nEnemy 1 Before: \n";
+	cout << "\nEnemy 1 Before:" << endl;
 	enemy1->printInfo();
-	cout << "\nEnemy 2 Before: \n";
+	cout << "\nEnemy 2 Before:" << endl;
 	enemy2->printInfo();
 
 	swapEntities(enemy1, enemy2);
 
-	cout << "\nEnemy 1 After: \n";
+	cout << "\nEnemy 1 After:" << endl;
 	enemy1->printInfo();
-	cout << "\nEnemy 2 After: \n";
+	cout << "\nEnemy 2 After:" << endl;
 	enemy2->printInfo();
 
-	cout << "n\Finding Entity, ID 2:\n";
+	cout << "\nFinding Entity, ID 2:\n";
 	GameEntity* found = container.findEntityById(2);
-	
+
 	if (found != nullptr) {
 		found->printInfo();
 
 		Enemy* cast = dynamic_cast<Enemy*>(found);
 		if (cast != nullptr) {
-			cout << "\nDynamic Cast Succeded"\n;
+			cout << "\nDynamic Cast Succeded\n" << endl;
 		}
 
 		else {
-			cout << "\nDynamic Cast Failed"\n;
+			cout << "\nDynamic Cast Failed\n" << endl;
 		}
 	}
-	
+
 	else {
 		cout << "Failed to find Entity" << endl;
 	}
 }
-

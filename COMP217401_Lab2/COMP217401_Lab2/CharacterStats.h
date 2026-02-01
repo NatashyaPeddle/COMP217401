@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 //CharacterStats.h
 enum class CharacterClass {
 	Warrior, Mage, Archer

@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "CharacterStats.h"
 
 //GameUtils.h

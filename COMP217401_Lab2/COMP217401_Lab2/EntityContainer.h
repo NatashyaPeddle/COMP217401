@@ -1,6 +1,5 @@
 #pragma once
 #include <vector>
-#include "GameEntity.h"
 using namespace std;
 
 //Template class for entities
