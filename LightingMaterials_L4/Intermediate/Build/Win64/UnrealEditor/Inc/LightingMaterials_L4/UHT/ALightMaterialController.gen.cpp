@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeALightMaterialController() {}
 
 // ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_AActor();
+ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UPointLightComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 LIGHTINGMATERIALS_L4_API UClass* Z_Construct_UClass_AALightMaterialController();
@@ -79,11 +80,21 @@ struct Z_Construct_UClass_AALightMaterialController_Statics
 		{ "ToolTip", "Static Mesh Component" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaterialInstance_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Dynamic Material\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ALightMaterialController.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Dynamic Material" },
+#endif
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class AALightMaterialController constinit property declarations ****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PointLightComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MaterialInstance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class AALightMaterialController constinit property declarations ******************
 	static UObject* (*const DependentSingletons[])();
@@ -94,11 +105,13 @@ struct Z_Construct_UClass_AALightMaterialController_Statics
 }; // struct Z_Construct_UClass_AALightMaterialController_Statics
 
 // ********** Begin Class AALightMaterialController Property Definitions ***************************
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AALightMaterialController_Statics::NewProp_PointLightComponent = { "PointLightComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AALightMaterialController, PointLightComponent), Z_Construct_UClass_UPointLightComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointLightComponent_MetaData), NewProp_PointLightComponent_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AALightMaterialController_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AALightMaterialController, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComponent_MetaData), NewProp_MeshComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AALightMaterialController_Statics::NewProp_PointLightComponent = { "PointLightComponent", nullptr, (EPropertyFlags)0x00400000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AALightMaterialController, PointLightComponent), Z_Construct_UClass_UPointLightComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointLightComponent_MetaData), NewProp_PointLightComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AALightMaterialController_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x00400000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AALightMaterialController, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComponent_MetaData), NewProp_MeshComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AALightMaterialController_Statics::NewProp_MaterialInstance = { "MaterialInstance", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AALightMaterialController, MaterialInstance), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaterialInstance_MetaData), NewProp_MaterialInstance_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AALightMaterialController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AALightMaterialController_Statics::NewProp_PointLightComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AALightMaterialController_Statics::NewProp_MeshComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AALightMaterialController_Statics::NewProp_MaterialInstance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AALightMaterialController_Statics::PropPointers) < 2048);
 // ********** End Class AALightMaterialController Property Definitions *****************************
@@ -138,15 +151,15 @@ AALightMaterialController::~AALightMaterialController() {}
 // ********** End Class AALightMaterialController **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics
+struct Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AALightMaterialController, AALightMaterialController::StaticClass, TEXT("AALightMaterialController"), &Z_Registration_Info_UClass_AALightMaterialController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AALightMaterialController), 425189001U) },
+		{ Z_Construct_UClass_AALightMaterialController, AALightMaterialController::StaticClass, TEXT("AALightMaterialController"), &Z_Registration_Info_UClass_AALightMaterialController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AALightMaterialController), 1433194280U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_2755817783{
+}; // Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_749408786{
 	TEXT("/Script/LightingMaterials_L4"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };
