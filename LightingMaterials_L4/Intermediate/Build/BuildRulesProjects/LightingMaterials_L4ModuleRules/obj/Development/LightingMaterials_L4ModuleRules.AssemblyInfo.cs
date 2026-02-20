@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LightingMaterials_L4ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+386fbd5f2af510881eeb39b6cbc9303e7672ee7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+198f60dd9a0134d76184a074b5e57c3264fa8e36")]
 [assembly: System.Reflection.AssemblyProductAttribute("LightingMaterials_L4ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LightingMaterials_L4ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

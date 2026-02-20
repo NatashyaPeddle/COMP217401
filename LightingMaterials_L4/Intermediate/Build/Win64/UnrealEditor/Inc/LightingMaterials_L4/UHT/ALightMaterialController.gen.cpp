@@ -151,15 +151,15 @@ AALightMaterialController::~AALightMaterialController() {}
 // ********** End Class AALightMaterialController **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics
+struct Z_CompiledInDeferFile_FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AALightMaterialController, AALightMaterialController::StaticClass, TEXT("AALightMaterialController"), &Z_Registration_Info_UClass_AALightMaterialController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AALightMaterialController), 1433194280U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_749408786{
+}; // Z_CompiledInDeferFile_FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_749408786{
 	TEXT("/Script/LightingMaterials_L4"),
-	Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h__Script_LightingMaterials_L4_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

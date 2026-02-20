@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_AALightMaterialController_Statics;
 LIGHTINGMATERIALS_L4_API UClass* Z_Construct_UClass_AALightMaterialController_NoRegister();
 
-#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAALightMaterialController(); \
 	friend struct ::Z_Construct_UClass_AALightMaterialController_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AALightMaterialController)
 
 
-#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AALightMaterialController(AALightMaterialController&&) = delete; \
 	AALightMaterialController(const AALightMaterialController&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~AALightMaterialController();
 
 
-#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_14_PROLOG
-#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_GENERATED_BODY \
+#define FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_14_PROLOG
+#define FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_ENHANCED_CONSTRUCTORS \
+	FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_INCLASS_NO_PURE_DECLS \
+	FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +56,6 @@ class AALightMaterialController;
 // ********** End Class AALightMaterialController **************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_super_OneDrive_Documents_GitHub_COMP217401_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h
+#define CURRENT_FILE_ID FID_LightingMaterials_L4_Source_LightingMaterials_L4_Public_ALightMaterialController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
