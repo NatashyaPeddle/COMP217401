@@ -127,15 +127,15 @@ AMyPawn::~AMyPawn() {}
 // ********** End Class AMyPawn ********************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics
+struct Z_CompiledInDeferFile_FID_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AMyPawn, AMyPawn::StaticClass, TEXT("AMyPawn"), &Z_Registration_Info_UClass_AMyPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyPawn), 2538467572U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_2932400374{
+}; // Z_CompiledInDeferFile_FID_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_2932400374{
 	TEXT("/Script/COMP217401_Lab6"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab6_Source_COMP217401_Lab6_MyPawn_h__Script_COMP217401_Lab6_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };
