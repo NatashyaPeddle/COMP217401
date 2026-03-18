@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+
 #include "MyPawn.generated.h"
 
 UCLASS()
@@ -24,7 +27,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	
 	//Movement Functions
 	void MoveForward(float Value);
@@ -32,8 +35,14 @@ public:
 	
 private:
 	UPROPERTY(VisibleAnywhere)
-	class UStaticMeshComponent* MeshComponent;
+	UStaticMeshComponent* MeshComponent;
 	
 	UPROPERTY(VisibleAnywhere)
 	class UFloatingPawnMovement* MovementComponent;
+	
+	UPROPERTY(VisibleAnywhere)
+	USpringArmComponent* SpringArmComponent;
+	
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* CameraComponent;
 };
