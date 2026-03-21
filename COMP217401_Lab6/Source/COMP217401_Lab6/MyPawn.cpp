@@ -18,7 +18,7 @@ AMyPawn::AMyPawn()
 	
 	//Create components
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	RootComponent = MeshComponent;
+	RootComponent = MeshComponent;veForw
 	
 	MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("MovementComponent"));
 }
