@@ -3,12 +3,11 @@
 
 #include "MyPawn.h"
 
-#include <rapidjson/internal/meta.h>
-
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
-#include "GameFrameWork/FloatingPawnMovement.h"
-#include "Misc/MapErrors.h"
+#include "GameFramework/FloatingPawnMovement.h"
+#include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
 
 // Sets default values
 AMyPawn::AMyPawn()
@@ -21,6 +20,16 @@ AMyPawn::AMyPawn()
 	RootComponent = MeshComponent;veForw
 	
 	MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("MovementComponent"));
+	
+	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
+	SpringArmComponent->SetupAttachment(RootComponent);
+	
+	SpringArmComponent->TargetArmLength = 300.0f;
+	SpringArmComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f));
+	SpringArmComponent->SetRelativeRotation(FRotator(-20.0f, 0.0f, 0.0f));
+	
+	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
+	CameraComponent->SetupAttachment(SpringArmComponent);
 }
 
 // Called when the game starts or when spawned
