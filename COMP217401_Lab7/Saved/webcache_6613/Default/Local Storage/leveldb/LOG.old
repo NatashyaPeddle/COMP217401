@@ -1,3 +1,2 @@
-2026/03/21-12:30:04.129 46bc Reusing MANIFEST C:\Users\Elijah\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/21-12:30:04.135 46bc Recovering log #3
-2026/03/21-12:30:04.138 46bc Reusing old log C:\Users\Elijah\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Local Storage\leveldb/000003.log 
+2026/03/22-18:55:26.112 7278 Creating DB C:\Users\super\OneDrive\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Local Storage\leveldb since it was missing.
+2026/03/22-18:55:26.142 7278 Reusing MANIFEST C:\Users\super\OneDrive\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001

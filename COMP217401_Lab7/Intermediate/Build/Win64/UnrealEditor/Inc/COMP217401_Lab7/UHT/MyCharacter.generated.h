@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_AMyCharacter_Statics;
 COMP217401_LAB7_API UClass* Z_Construct_UClass_AMyCharacter_NoRegister();
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyCharacter(); \
 	friend struct ::Z_Construct_UClass_AMyCharacter_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AMyCharacter)
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMyCharacter(AMyCharacter&&) = delete; \
 	AMyCharacter(const AMyCharacter&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~AMyCharacter();
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_9_PROLOG
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_GENERATED_BODY \
+#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_9_PROLOG
+#define FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +56,6 @@ class AMyCharacter;
 // ********** End Class AMyCharacter ***************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h
+#define CURRENT_FILE_ID FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab7_Source_COMP217401_Lab7_MyCharacter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

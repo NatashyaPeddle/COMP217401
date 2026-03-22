@@ -33,10 +33,19 @@ public:
 	void Turn(float Value);
 	void LookUp(float Value);
 	
+	// Jump
+	void Jump();
+	void StopJumping();
+	
 	// Camera Functions
 	UPROPERTY(VisibleAnywhere)
 	class USpringArmComponent* SpringArm;
 	
 	UPROPERTY(VisibleAnywhere)
 	class UCameraComponent* Camera;
+	
+	// Animation
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+	float Speed;
+
 };

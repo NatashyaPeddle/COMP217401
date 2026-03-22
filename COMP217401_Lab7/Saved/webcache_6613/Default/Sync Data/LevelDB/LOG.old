@@ -1,3 +1,2 @@
-2026/03/21-12:30:04.079 4818 Reusing MANIFEST C:\Users\Elijah\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Sync Data\LevelDB/MANIFEST-000001
-2026/03/21-12:30:04.081 4818 Recovering log #3
-2026/03/21-12:30:04.081 4818 Reusing old log C:\Users\Elijah\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Sync Data\LevelDB/000003.log 
+2026/03/22-18:55:26.041 1fcc Creating DB C:\Users\super\OneDrive\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Sync Data\LevelDB since it was missing.
+2026/03/22-18:55:26.067 1fcc Reusing MANIFEST C:\Users\super\OneDrive\Documents\GitHub\COMP217401\COMP217401_Lab7\Saved\webcache_6613\Default\Sync Data\LevelDB/MANIFEST-000001

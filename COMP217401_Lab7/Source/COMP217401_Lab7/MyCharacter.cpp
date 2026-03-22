@@ -22,6 +22,10 @@ AMyCharacter::AMyCharacter()
 	SpringArm->bUsePawnControlRotation = true;
 	Camera->bUsePawnControlRotation = false;
 	
+	SpringArm->bInheritPitch = true;
+	SpringArm->bInheritRoll = true;
+	SpringArm->bInheritYaw = false;
+	
 	bUseControllerRotationYaw = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 }
@@ -37,7 +41,8 @@ void AMyCharacter::BeginPlay()
 void AMyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
+	Speed = GetVelocity().Size();
 }
 
 // Called to bind functionality to input
@@ -50,6 +55,9 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	
 	PlayerInputComponent->BindAxis("Turn", this, &AMyCharacter::Turn);
 	PlayerInputComponent->BindAxis("LookUp", this, &AMyCharacter::LookUp);
+	
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMyCharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMyCharacter::StopJumping);
 }
 
 void AMyCharacter::MoveForward(float Value)
@@ -84,4 +92,14 @@ void AMyCharacter::Turn(float Value)
 void AMyCharacter::LookUp(float Value)
 {
 	AddControllerPitchInput(Value);
+}
+
+void AMyCharacter::Jump()
+{
+	Super::Jump();
+}
+
+void AMyCharacter::StopJumping()
+{
+	Super::StopJumping();
 }
