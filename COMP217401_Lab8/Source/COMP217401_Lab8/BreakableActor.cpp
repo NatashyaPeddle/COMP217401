@@ -15,6 +15,8 @@ ABreakableActor::ABreakableActor()
 	Mesh->SetNotifyRigidBodyCollision(true);
 	
 	Mesh->OnComponentHit.AddDynamic(this, &ABreakableActor::OnHit);
+	
+	Mesh->SetCollisionProfileName(TEXT("BlockAll"));
 }
 
 // Called when the game starts or when spawned

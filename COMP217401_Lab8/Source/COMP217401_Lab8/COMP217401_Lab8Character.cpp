@@ -11,11 +11,20 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "COMP217401_Lab8.h"
+#include "DrawDebugHelpers.h"
+#include "Enemy.h"
+#include "Kismet/GameplayStatics.h"
+
 
 ACOMP217401_Lab8Character::ACOMP217401_Lab8Character()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	
+	GetCapsuleComponent()->SetCollisionProfileName(TEXT("Pawn"));
+	GetCapsuleComponent()->SetGenerateOverlapEvents(true);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+
 		
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
@@ -52,6 +61,11 @@ ACOMP217401_Lab8Character::ACOMP217401_Lab8Character()
 
 void ACOMP217401_Lab8Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &ACOMP217401_Lab8Character::Attack);
+
+	
 	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent)) {
 		
@@ -65,6 +79,9 @@ void ACOMP217401_Lab8Character::SetupPlayerInputComponent(UInputComponent* Playe
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACOMP217401_Lab8Character::Look);
+		
+		//attack
+		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Started, this, &ACOMP217401_Lab8Character::Attack);
 	}
 	else
 	{
@@ -130,4 +147,41 @@ void ACOMP217401_Lab8Character::DoJumpEnd()
 {
 	// signal the character to stop jumping
 	StopJumping();
+}
+
+void ACOMP217401_Lab8Character::Attack()
+{
+	FVector Start = GetActorLocation();
+	FVector Forward = GetActorForwardVector();
+	FVector End = Start + (Forward * 500.f);
+
+	FHitResult Hit;
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+
+	bool bHit = GetWorld()->LineTraceSingleByChannel(
+		Hit,
+		Start,
+		End,
+		ECC_Visibility,
+		Params
+	);
+	
+	DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 1.0f);
+
+	if (bHit)
+	{
+		AEnemy* Enemy = Cast<AEnemy>(Hit.GetActor());
+
+		if (Enemy)
+		{
+			UGameplayStatics::ApplyDamage(
+				Enemy,
+				25.f,
+				GetController(),
+				this,
+				nullptr
+			);
+		}
+	}
 }

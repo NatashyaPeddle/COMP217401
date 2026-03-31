@@ -20,14 +20,14 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ATriggerActor ************************************************************
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
 struct Z_Construct_UClass_ATriggerActor_Statics;
 COMP217401_LAB8_API UClass* Z_Construct_UClass_ATriggerActor_NoRegister();
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATriggerActor(); \
 	friend struct ::Z_Construct_UClass_ATriggerActor_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(ATriggerActor)
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ATriggerActor(ATriggerActor&&) = delete; \
 	ATriggerActor(const ATriggerActor&) = delete; \
@@ -48,13 +48,13 @@ public: \
 	NO_API virtual ~ATriggerActor();
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_9_PROLOG
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_GENERATED_BODY \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_9_PROLOG
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_ENHANCED_CONSTRUCTORS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_INCLASS_NO_PURE_DECLS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class ATriggerActor;
 // ********** End Class ATriggerActor **************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h
+#define CURRENT_FILE_ID FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

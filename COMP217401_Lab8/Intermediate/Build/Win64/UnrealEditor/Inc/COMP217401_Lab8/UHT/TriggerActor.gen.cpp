@@ -220,15 +220,15 @@ ATriggerActor::~ATriggerActor() {}
 // ********** End Class ATriggerActor **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ATriggerActor, ATriggerActor::StaticClass, TEXT("ATriggerActor"), &Z_Registration_Info_UClass_ATriggerActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATriggerActor), 3550657473U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_1397022460{
+}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_1397022460{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_TriggerActor_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

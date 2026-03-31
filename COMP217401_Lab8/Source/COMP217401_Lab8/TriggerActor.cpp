@@ -9,12 +9,15 @@
 // Sets default values
 ATriggerActor::ATriggerActor()
 {
-	TriggerBox = CreateDefaultSubobject<UBoxComponent>(TEXT("TriggerBox"));
+	TriggerBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Trigger"));
 	RootComponent = TriggerBox;
 	
 	TriggerBox->SetCollisionProfileName(TEXT("Trigger"));
 	
 	TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &ATriggerActor::OnOverlapBegin);
+	
+	
+	TriggerBox->SetGenerateOverlapEvents(true);
 }
 
 // Called when the game starts or when spawned

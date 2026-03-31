@@ -256,15 +256,15 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UCombatAttacker);
 // ********** End Interface UCombatAttacker ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UCombatAttacker, UCombatAttacker::StaticClass, TEXT("UCombatAttacker"), &Z_Registration_Info_UClass_UCombatAttacker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatAttacker), 1920687710U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_50692320{
+}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_50692320{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatAttacker_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

@@ -211,15 +211,15 @@ ABreakableActor::~ABreakableActor() {}
 // ********** End Class ABreakableActor ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ABreakableActor, ABreakableActor::StaticClass, TEXT("ABreakableActor"), &Z_Registration_Info_UClass_ABreakableActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABreakableActor), 3482331979U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_2820083267{
+}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_2820083267{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_BreakableActor_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

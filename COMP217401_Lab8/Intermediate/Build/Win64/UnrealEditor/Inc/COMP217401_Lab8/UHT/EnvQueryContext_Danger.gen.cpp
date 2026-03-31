@@ -108,15 +108,15 @@ UEnvQueryContext_Danger::~UEnvQueryContext_Danger() {}
 // ********** End Class UEnvQueryContext_Danger ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UEnvQueryContext_Danger, UEnvQueryContext_Danger::StaticClass, TEXT("UEnvQueryContext_Danger"), &Z_Registration_Info_UClass_UEnvQueryContext_Danger, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnvQueryContext_Danger), 2795986934U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_3693217255{
+}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_3693217255{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

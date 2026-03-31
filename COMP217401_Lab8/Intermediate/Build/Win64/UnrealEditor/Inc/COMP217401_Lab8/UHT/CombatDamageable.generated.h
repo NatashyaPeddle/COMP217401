@@ -18,7 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 
 // ********** Begin Interface UCombatDamageable ****************************************************
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execNotifyDanger); \
 	DECLARE_FUNCTION(execApplyHealing); \
 	DECLARE_FUNCTION(execHandleDeath); \
@@ -28,7 +28,7 @@ class AActor;
 struct Z_Construct_UClass_UCombatDamageable_Statics;
 COMP217401_LAB8_API UClass* Z_Construct_UClass_UCombatDamageable_NoRegister();
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	COMP217401_LAB8_API UCombatDamageable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -40,7 +40,7 @@ COMP217401_LAB8_API UClass* Z_Construct_UClass_UCombatDamageable_NoRegister();
 	virtual ~UCombatDamageable() = default;
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_GENERATED_UINTERFACE_BODY() \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUCombatDamageable(); \
 	friend struct ::Z_Construct_UClass_UCombatDamageable_Statics; \
@@ -51,15 +51,15 @@ public: \
 	DECLARE_SERIALIZER(UCombatDamageable)
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_GENERATED_BODY \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_GENERATED_UINTERFACE_BODY() \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_ENHANCED_CONSTRUCTORS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_GENERATED_UINTERFACE_BODY() \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~ICombatDamageable() {} \
 public: \
@@ -68,12 +68,12 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_14_PROLOG
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_22_GENERATED_BODY \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_14_PROLOG
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -83,6 +83,6 @@ class UCombatDamageable;
 // ********** End Interface UCombatDamageable ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h
+#define CURRENT_FILE_ID FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_Interfaces_CombatDamageable_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

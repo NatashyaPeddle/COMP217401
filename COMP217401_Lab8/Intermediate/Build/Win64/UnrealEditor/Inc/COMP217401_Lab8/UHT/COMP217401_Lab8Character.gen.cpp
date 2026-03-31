@@ -339,6 +339,10 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 		{ "ToolTip", "Mouse Look Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "COMP217401_Lab8Character.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class ACOMP217401_Lab8Character constinit property declarations ****************
@@ -348,6 +352,7 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ACOMP217401_Lab8Character constinit property declarations ******************
 	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
@@ -377,6 +382,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_La
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_AttackAction = { "AttackAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, AttackAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackAction_MetaData), NewProp_AttackAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_FollowCamera,
@@ -384,6 +390,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACOMP2174
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MouseLookAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_AttackAction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::PropPointers) < 2048);
 // ********** End Class ACOMP217401_Lab8Character Property Definitions *****************************
@@ -425,15 +432,15 @@ ACOMP217401_Lab8Character::~ACOMP217401_Lab8Character() {}
 // ********** End Class ACOMP217401_Lab8Character **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACOMP217401_Lab8Character, ACOMP217401_Lab8Character::StaticClass, TEXT("ACOMP217401_Lab8Character"), &Z_Registration_Info_UClass_ACOMP217401_Lab8Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACOMP217401_Lab8Character), 3204805036U) },
+		{ Z_Construct_UClass_ACOMP217401_Lab8Character, ACOMP217401_Lab8Character::StaticClass, TEXT("ACOMP217401_Lab8Character"), &Z_Registration_Info_UClass_ACOMP217401_Lab8Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACOMP217401_Lab8Character), 1598035612U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_34389316{
+}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_3194832640{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UEnvQueryContext_Danger_Statics;
 COMP217401_LAB8_API UClass* Z_Construct_UClass_UEnvQueryContext_Danger_NoRegister();
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUEnvQueryContext_Danger(); \
 	friend struct ::Z_Construct_UClass_UEnvQueryContext_Danger_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UEnvQueryContext_Danger)
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UEnvQueryContext_Danger(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,12 +43,12 @@ public: \
 	NO_API virtual ~UEnvQueryContext_Danger();
 
 
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_13_PROLOG
-#define FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_GENERATED_BODY \
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_13_PROLOG
+#define FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_ENHANCED_CONSTRUCTORS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_INCLASS_NO_PURE_DECLS \
+	FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,6 +58,6 @@ class UEnvQueryContext_Danger;
 // ********** End Class UEnvQueryContext_Danger ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Elijah_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h
+#define CURRENT_FILE_ID FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_Combat_AI_EnvQueryContext_Danger_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

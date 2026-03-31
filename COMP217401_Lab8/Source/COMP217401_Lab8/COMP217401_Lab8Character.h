@@ -48,16 +48,22 @@ protected:
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, Category="Input")
 	UInputAction* MouseLookAction;
+	
+	UPROPERTY(EditAnywhere, Category="Input") 
+	UInputAction* AttackAction;
 
 public:
 
 	/** Constructor */
-	ACOMP217401_Lab8Character();	
+	ACOMP217401_Lab8Character();
+	
 
 protected:
 
 	/** Initialize input action bindings */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	
 
 protected:
 
@@ -66,7 +72,10 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-
+	
+	///ATTACK 
+	void Attack();
+	
 public:
 
 	/** Handles move inputs from either controls or UI interfaces */
@@ -84,7 +93,7 @@ public:
 	/** Handles jump pressed inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")
 	virtual void DoJumpEnd();
-
+	
 public:
 
 	/** Returns CameraBoom subobject **/
