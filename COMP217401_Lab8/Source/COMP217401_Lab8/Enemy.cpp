@@ -2,13 +2,19 @@
 
 
 #include "Enemy.h"
-#include "Kismet/GameplayStatics.h"
+#include "Components/StaticMeshComponent.h"
 
 // Sets default values
 AEnemy::AEnemy()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	
+	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	RootComponent = Mesh;
+
+	Mesh->SetCollisionProfileName(TEXT("BlockAllDynamic"));
+
 	Health = 100.0f;
 }
 
@@ -26,12 +32,14 @@ void AEnemy::Tick(float DeltaTime)
 
 }
 
-void AEnemy::TakeDamage(float Damage)
+float AEnemy::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	Health -= Damage;
-	
-	if (Health <= 0.0f)
+	Health -= DamageAmount;
+
+	if (Health <= 0.f)
 	{
 		Destroy();
 	}
+
+	return DamageAmount;
 }

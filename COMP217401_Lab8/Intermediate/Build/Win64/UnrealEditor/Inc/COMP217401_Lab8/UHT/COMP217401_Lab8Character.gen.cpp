@@ -18,6 +18,7 @@ ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
+ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 UPackage* Z_Construct_UPackage__Script_COMP217401_Lab8();
 // ********** End Cross Module References **********************************************************
 
@@ -231,6 +232,56 @@ DEFINE_FUNCTION(ACOMP217401_Lab8Character::execDoMove)
 }
 // ********** End Class ACOMP217401_Lab8Character Function DoMove **********************************
 
+// ********** Begin Class ACOMP217401_Lab8Character Function GetHealthPercent **********************
+struct Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics
+{
+	struct COMP217401_Lab8Character_eventGetHealthPercent_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "COMP217401_Lab8Character.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function GetHealthPercent constinit property declarations **********************
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHealthPercent constinit property declarations ************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function GetHealthPercent Property Definitions *********************************
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(COMP217401_Lab8Character_eventGetHealthPercent_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::PropPointers) < 2048);
+// ********** End Function GetHealthPercent Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ACOMP217401_Lab8Character, nullptr, "GetHealthPercent", 	Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::COMP217401_Lab8Character_eventGetHealthPercent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::COMP217401_Lab8Character_eventGetHealthPercent_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ACOMP217401_Lab8Character::execGetHealthPercent)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetHealthPercent();
+	P_NATIVE_END;
+}
+// ********** End Class ACOMP217401_Lab8Character Function GetHealthPercent ************************
+
 // ********** Begin Class ACOMP217401_Lab8Character ************************************************
 FClassRegistrationInfo Z_Registration_Info_UClass_ACOMP217401_Lab8Character;
 UClass* ACOMP217401_Lab8Character::GetPrivateStaticClass()
@@ -299,6 +350,10 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 		{ "ToolTip", "Follow camera" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "COMP217401_Lab8Character.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JumpAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
@@ -343,16 +398,27 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "COMP217401_Lab8Character.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
+		{ "Category", "COMP217401_Lab8Character" },
+		{ "ModuleRelativePath", "COMP217401_Lab8Character.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
+		{ "Category", "COMP217401_Lab8Character" },
+		{ "ModuleRelativePath", "COMP217401_Lab8Character.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class ACOMP217401_Lab8Character constinit property declarations ****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackAction;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Health;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealth;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ACOMP217401_Lab8Character constinit property declarations ******************
 	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
@@ -360,6 +426,7 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 		{ .NameUTF8 = UTF8TEXT("DoJumpStart"), .Pointer = &ACOMP217401_Lab8Character::execDoJumpStart },
 		{ .NameUTF8 = UTF8TEXT("DoLook"), .Pointer = &ACOMP217401_Lab8Character::execDoLook },
 		{ .NameUTF8 = UTF8TEXT("DoMove"), .Pointer = &ACOMP217401_Lab8Character::execDoMove },
+		{ .NameUTF8 = UTF8TEXT("GetHealthPercent"), .Pointer = &ACOMP217401_Lab8Character::execGetHealthPercent },
 	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -367,6 +434,7 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 		{ &Z_Construct_UFunction_ACOMP217401_Lab8Character_DoJumpStart, "DoJumpStart" }, // 2925990591
 		{ &Z_Construct_UFunction_ACOMP217401_Lab8Character_DoLook, "DoLook" }, // 2018636918
 		{ &Z_Construct_UFunction_ACOMP217401_Lab8Character_DoMove, "DoMove" }, // 3631295953
+		{ &Z_Construct_UFunction_ACOMP217401_Lab8Character_GetHealthPercent, "GetHealthPercent" }, // 2202514127
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -376,21 +444,27 @@ struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 }; // struct Z_Construct_UClass_ACOMP217401_Lab8Character_Statics
 
 // ********** Begin Class ACOMP217401_Lab8Character Property Definitions ***************************
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraBoom_MetaData), NewProp_CameraBoom_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FollowCamera_MetaData), NewProp_FollowCamera_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraBoom_MetaData), NewProp_CameraBoom_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FollowCamera_MetaData), NewProp_FollowCamera_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, JumpAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JumpAction_MetaData), NewProp_JumpAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_AttackAction = { "AttackAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, AttackAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackAction_MetaData), NewProp_AttackAction_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, Health), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACOMP217401_Lab8Character, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_FollowCamera,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_DefaultMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_JumpAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MouseLookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_AttackAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_Health,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::NewProp_MaxHealth,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::PropPointers) < 2048);
 // ********** End Class ACOMP217401_Lab8Character Property Definitions *****************************
@@ -411,7 +485,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ACOMP217401_Lab8Charact
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::PropPointers),
 	0,
-	0x008000A5u,
+	0x008000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::Class_MetaDataParams), Z_Construct_UClass_ACOMP217401_Lab8Character_Statics::Class_MetaDataParams)
 };
 void ACOMP217401_Lab8Character::StaticRegisterNativesACOMP217401_Lab8Character()
@@ -432,15 +506,15 @@ ACOMP217401_Lab8Character::~ACOMP217401_Lab8Character() {}
 // ********** End Class ACOMP217401_Lab8Character **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACOMP217401_Lab8Character, ACOMP217401_Lab8Character::StaticClass, TEXT("ACOMP217401_Lab8Character"), &Z_Registration_Info_UClass_ACOMP217401_Lab8Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACOMP217401_Lab8Character), 1598035612U) },
+		{ Z_Construct_UClass_ACOMP217401_Lab8Character, ACOMP217401_Lab8Character::StaticClass, TEXT("ACOMP217401_Lab8Character"), &Z_Registration_Info_UClass_ACOMP217401_Lab8Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACOMP217401_Lab8Character), 3227829011U) },
 	};
-}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_3194832640{
+}; // Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_2534325519{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_COMP217401_Lab8Character_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

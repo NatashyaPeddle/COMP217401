@@ -169,15 +169,15 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, USideScrollingInteractable);
 // ********** End Interface USideScrollingInteractable *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics
+struct Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_USideScrollingInteractable, USideScrollingInteractable::StaticClass, TEXT("USideScrollingInteractable"), &Z_Registration_Info_UClass_USideScrollingInteractable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USideScrollingInteractable), 1180708605U) },
 	};
-}; // Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_403662947{
+}; // Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_403662947{
 	TEXT("/Script/COMP217401_Lab8"),
-	Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_super_OneDrive_Documents_GitHub_COMP217401_COMP217401_Lab8_Source_COMP217401_Lab8_Variant_SideScrolling_Interfaces_SideScrollingInteractable_h__Script_COMP217401_Lab8_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

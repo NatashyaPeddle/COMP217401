@@ -13,6 +13,7 @@
 #include "COMP217401_Lab8.h"
 #include "DrawDebugHelpers.h"
 #include "Enemy.h"
+#include "BreakableActor.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -25,7 +26,9 @@ ACOMP217401_Lab8Character::ACOMP217401_Lab8Character()
 	GetCapsuleComponent()->SetGenerateOverlapEvents(true);
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 
-		
+	Health = 100.f;
+	MaxHealth = 100.f;
+
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
@@ -182,6 +185,42 @@ void ACOMP217401_Lab8Character::Attack()
 				this,
 				nullptr
 			);
+		}
+
+		else if (ABreakableActor* Breakable = Cast<ABreakableActor>(Hit.GetActor()))
+		{
+			UGameplayStatics::ApplyDamage(Breakable, 25.f, GetController(), this, nullptr);
+		}
+	}
+}
+
+void ACOMP217401_Lab8Character::AddHealth(float Amount)
+{
+	Health += Amount;
+
+	Health = FMath::Clamp(Health, 0.f, 100.f);
+}
+
+float ACOMP217401_Lab8Character::GetHealthPercent() const
+{
+	return Health / MaxHealth;
+}
+
+void ACOMP217401_Lab8Character::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (APlayerController* PC = Cast<APlayerController>(GetController()))
+	{
+		if (ULocalPlayer* LP = PC->GetLocalPlayer())
+		{
+			if (UEnhancedInputLocalPlayerSubsystem* Subsystem = LP->GetSubsystem<UEnhancedInputLocalPlayerSubsystem>())
+			{
+				if (DefaultMappingContext)
+				{
+					Subsystem->AddMappingContext(DefaultMappingContext, 0);
+				}
+			}
 		}
 	}
 }

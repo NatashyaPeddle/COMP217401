@@ -10,20 +10,17 @@ UCLASS()
 class COMP217401_LAB8_API ABreakableActor : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
+
+public:
 	ABreakableActor();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* Mesh;
-	
-	UFUNCTION()
-	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
-		FVector NormalImpulse, const FHitResult& Hit);
+
+
+	virtual float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 };

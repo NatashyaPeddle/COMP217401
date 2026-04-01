@@ -2,41 +2,41 @@
 
 
 #include "BreakableActor.h"
-#include "Components/StaticMeshCOmponent.h"
-#include "Enemy.h"
+#include "Components/StaticMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 
-// Sets default values
 ABreakableActor::ABreakableActor()
 {
- 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+	PrimaryActorTick.bCanEverTick = false;
+
+	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
 	RootComponent = Mesh;
 
 	Mesh->SetSimulatePhysics(true);
-	Mesh->SetNotifyRigidBodyCollision(true);
-	
-	Mesh->OnComponentHit.AddDynamic(this, &ABreakableActor::OnHit);
-	
-	Mesh->SetCollisionProfileName(TEXT("BlockAll"));
+	Mesh->SetCollisionProfileName(TEXT("PhysicsActor"));
 }
 
-// Called when the game starts or when spawned
 void ABreakableActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
-void ABreakableActor::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+float ABreakableActor::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent,
+	AController* EventInstigator, AActor* DamageCauser)
 {
-	if (OtherActor && OtherActor != this)
+	if (!DamageCauser)
 	{
-		AEnemy* Enemy = Cast<AEnemy>(OtherActor);
-		
-		if (Enemy)
-		{
-			Enemy->TakeDamage(50.f);
-			Destroy();
-		}
+		UE_LOG(LogTemp, Warning, TEXT("Null DamageCauser"));
+		return 0.f;
 	}
+
+	if (Mesh && Mesh->IsSimulatingPhysics())
+	{
+		FVector ImpulseDir = (GetActorLocation() - DamageCauser->GetActorLocation()).GetSafeNormal();
+		Mesh->AddImpulse(ImpulseDir * 1000.f, NAME_None, true);
+	}
+
+	Destroy();
+
+	return DamageAmount;
 }

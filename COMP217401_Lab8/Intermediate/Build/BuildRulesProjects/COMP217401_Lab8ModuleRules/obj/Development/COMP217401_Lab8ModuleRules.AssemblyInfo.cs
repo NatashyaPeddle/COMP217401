@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("COMP217401_Lab8ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83ca3b041e39531233e7d4067f9d117ae501e409")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2564fd310ff080c9c630b2d1b3aa56d71dedbc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("COMP217401_Lab8ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("COMP217401_Lab8ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -21,7 +21,7 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 			SingletonFuncArray,
 			UE_ARRAY_COUNT(SingletonFuncArray),
 			PKG_CompiledIn | 0x00000000,
-			0x7D34465D,
+			0x16CA8470,
 			0xEB7B269B,
 			METADATA_PARAMS(0, nullptr)
 		};
@@ -29,5 +29,5 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 	}
 	return Z_Registration_Info_UPackage__Script_COMP217401_Lab8.OuterSingleton;
 }
-static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_COMP217401_Lab8(Z_Construct_UPackage__Script_COMP217401_Lab8, TEXT("/Script/COMP217401_Lab8"), Z_Registration_Info_UPackage__Script_COMP217401_Lab8, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x7D34465D, 0xEB7B269B));
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_COMP217401_Lab8(Z_Construct_UPackage__Script_COMP217401_Lab8, TEXT("/Script/COMP217401_Lab8"), Z_Registration_Info_UPackage__Script_COMP217401_Lab8, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x16CA8470, 0xEB7B269B));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

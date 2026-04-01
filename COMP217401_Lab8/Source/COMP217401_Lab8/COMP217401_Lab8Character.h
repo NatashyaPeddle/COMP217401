@@ -10,6 +10,7 @@
 class USpringArmComponent;
 class UCameraComponent;
 class UInputAction;
+class UInputMappingContext;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
@@ -18,10 +19,17 @@ DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
  *  A simple player-controllable third person character
  *  Implements a controllable orbiting camera
  */
-UCLASS(abstract)
+UCLASS()
 class ACOMP217401_Lab8Character : public ACharacter
 {
 	GENERATED_BODY()
+
+public:
+
+	/** Constructor */
+	ACOMP217401_Lab8Character();
+
+protected:
 
 	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
@@ -30,8 +38,9 @@ class ACOMP217401_Lab8Character : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
-	
-protected:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	class UInputMappingContext* DefaultMappingContext;
 
 	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, Category="Input")
@@ -51,21 +60,12 @@ protected:
 	
 	UPROPERTY(EditAnywhere, Category="Input") 
 	UInputAction* AttackAction;
-
-public:
-
-	/** Constructor */
-	ACOMP217401_Lab8Character();
 	
 
 protected:
 
-	/** Initialize input action bindings */
+	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
-	
-
-protected:
 
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
@@ -101,5 +101,18 @@ public:
 
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+public:
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Health;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MaxHealth;
+
+	UFUNCTION(BlueprintCallable)
+	float GetHealthPercent() const;
+
+	void AddHealth(float Amount);
 };
 
